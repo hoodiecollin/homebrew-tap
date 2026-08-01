@@ -1,25 +1,25 @@
 class Forgedb < Formula
   desc "ForgeDB — an application database generator. Compiles a declarative .forge schema into tailored Rust database code, a TypeScript SDK, and a REST API."
   homepage "https://github.com/hoodiecollin/forgedb"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.0/forgedb-aarch64-apple-darwin.tar.xz"
-      sha256 "143f73cf6911e01c262b7c1e48b1fb95435db83375c7cae2e6a3793475ca2e8b"
+      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.1/forgedb-aarch64-apple-darwin.tar.xz"
+      sha256 "07dea8cb858d9b800cc9e3291ff94acb1b35d97a83d14b81fe9a612eb2f3a018"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.0/forgedb-x86_64-apple-darwin.tar.xz"
-      sha256 "10f0d342c620b04f4af742f3f8f0e9c7886f6990458980babf68a6cb9a12b67f"
+      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.1/forgedb-x86_64-apple-darwin.tar.xz"
+      sha256 "d9c89312ac091d420342517b166ba6504def9811257994e677f9fc87969898f8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.0/forgedb-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7de83035cc009db83e1f402dc4d0403ee342b881deffc238585bdfda9abe581f"
+      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.1/forgedb-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f61cdf0add84d1ec23eed77f0f7f0a7a2829863b4621ec460c5ced57a81290b9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.0/forgedb-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6fec41d6ef4a191f167f9881c14b1e7f2c92c5c829e022a15d90d3e9acee6466"
+      url "https://github.com/hoodiecollin/forgedb/releases/download/v0.3.1/forgedb-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c2b19f23cbaa733dba4013c696e20096aa13fcfd24b30f8130f70cc158cfe081"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
